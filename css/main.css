@@ -1,0 +1,22 @@
+/*main.css*/
+.multithemes{
+	height:120px;
+	width:120px;
+	margin:15px;
+}
+.th-para{
+	padding:15px;
+}
+
+.ui-body-c, .ui-overlay-c,.ui-btn-up-c {
+	color: #fff;	
+}
+.ui-btn-hover-c:visited,
+.ui-btn-hover-c:hover,
+.ui-btn-hover-c a.ui-link-inherit{
+	color: #000;
+}
+.txt-shadow{
+    text-shadow: 0	0px 0 #000;
+}
+
