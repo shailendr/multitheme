@@ -1,4 +1,5 @@
 ;(function (jQuery) {
+    //https://github.com/sanshanchuns/Android-Game-AndEngine/tree/master/src/com/leo/andengine/chapter1
     function init() {
         var lsTheme = localStorage.getItem("crtTheme");
         change(lsTheme ? lsTheme : thm.currentTheme);
