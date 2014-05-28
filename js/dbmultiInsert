@@ -1,0 +1,22 @@
+/* /
+         basic module for insert multiple row in table  
+ 			// new code start
+            var i=0;
+           var quer="INSERT OR REPLACE INTO EDUSERTBL ";
+           // Dyanmic code will going to work here it will only work for the 
+           for(var l=data.GetUsers.length;i<l;i++)
+           {
+        	e = data.GetUsers[i];
+            if(i==l-1){
+            	 quer+=" SELECT '"+e.UserId+"','"+e.Name+"','"+e.Pin+"','"+e.GroupName+"','"+e.IsSupervisor+"','"+e.PasswordExpirydate+"','"+e.EmailId+"','"+e.Status+"','"+e.Sunday+"','"+e.Monday+"','"+e.Monday+"','"+e.Tuesday+"','"+e.Wednesday+"','"+e.Thursday+"','"+e.Friday+"','"+e.Saturday+"','"+e.LastUserId+"','"+e.LastDateTime+"' ;";
+            }else{
+            	quer+=" SELECT '"+e.UserId+"','"+e.Name+"','"+e.Pin+"','"+e.GroupName+"','"+e.IsSupervisor+"','"+e.PasswordExpirydate+"','"+e.EmailId+"','"+e.Status+"','"+e.Sunday+"','"+e.Monday+"','"+e.Monday+"','"+e.Tuesday+"','"+e.Wednesday+"','"+e.Thursday+"','"+e.Friday+"','"+e.Saturday+"','"+e.LastUserId+"','"+e.LastDateTime+"' UNION ALL";
+            }
+           }
+        //   e = data.GetUsers[i];
+        //    quer+=" select "+i+",'test' ; ";
+            db.transaction(function (transaction) {
+            	transaction.executeSql(quer,[]);
+            });
+           /// new code end
+*/  
